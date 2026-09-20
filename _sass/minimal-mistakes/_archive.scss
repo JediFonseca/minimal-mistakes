@@ -492,11 +492,11 @@
         font-weight: 600;
         transition: transform 0.15s ease, background-color 0.15s ease;
 
-        &:hover,
-        &.active {
-          background-color: $primary-color;
-          color: $background-color;
-          transform: translateX(4px);
+       &:hover,
+       &.active {
+       background-color: $primary-color;
+       color: $background-color;
+       padding-left: 1.4em;
         }
       }
     }
