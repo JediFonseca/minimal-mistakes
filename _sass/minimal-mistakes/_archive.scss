@@ -134,7 +134,11 @@
 
 .archive {
   .grid__wrapper {
-    /* extend grid elements to the right */
+    @include breakpoint($medium) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2em;
+    }
 
     @include breakpoint($large) {
       margin-inline-end: -1 * $right-sidebar-width-narrow;
