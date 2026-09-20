@@ -490,7 +490,7 @@
         text-decoration: none;
         color: $text-color;
         font-weight: 600;
-        transition: transform 0.15s ease, background-color 0.15s ease;
+        transition: transform 0.15s ease, background-color 0.15s ease, padding-left 0.15s ease;
 
        &:hover,
        &.active {
