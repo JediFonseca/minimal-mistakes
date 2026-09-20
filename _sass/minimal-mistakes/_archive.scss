@@ -495,3 +495,33 @@
     }
   }
 }
+
+#results {
+  .results__found {
+    grid-column: 1 / -1;
+  }
+
+  @include breakpoint($medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+
+  .list__item {
+    margin-bottom: 0;
+
+    .archive__item-excerpt {
+      display: none;
+    }
+
+    .archive__item-teaser {
+      aspect-ratio: 5 / 3;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
