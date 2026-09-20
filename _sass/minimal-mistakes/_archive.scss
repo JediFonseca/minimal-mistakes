@@ -132,6 +132,14 @@
    Grid view
    ========================================================================== */
 
+.entries-grid {
+  @include breakpoint($medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+}
+
 .archive {
   .grid__wrapper {
     @include breakpoint($medium) {
